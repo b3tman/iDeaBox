@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B631BE854DB2A1795D333EA0 /* Pods_iDeaBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B5EB2F0F099B009504A66D /* Pods_iDeaBox.framework */; };
 		FEF5047D27A94C39005A96B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5047C27A94C39005A96B6 /* AppDelegate.swift */; };
-		FEF5047F27A94C39005A96B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5047E27A94C39005A96B6 /* SceneDelegate.swift */; };
 		FEF5048127A94C39005A96B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5048027A94C39005A96B6 /* ViewController.swift */; };
 		FEF5048427A94C39005A96B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF5048227A94C39005A96B6 /* Main.storyboard */; };
 		FEF5048627A94C3B005A96B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF5048527A94C3B005A96B6 /* Assets.xcassets */; };
 		FEF5048927A94C3B005A96B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF5048727A94C3B005A96B6 /* LaunchScreen.storyboard */; };
+		FEF504A727A96A5A005A96B6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF504A627A96A5A005A96B6 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		285ABE22F297F929D5BE7F26 /* Pods-iDeaBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDeaBox.debug.xcconfig"; path = "Target Support Files/Pods-iDeaBox/Pods-iDeaBox.debug.xcconfig"; sourceTree = "<group>"; };
+		B0B5EB2F0F099B009504A66D /* Pods_iDeaBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDeaBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6BE01EB44A67577777611A /* Pods-iDeaBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDeaBox.release.xcconfig"; path = "Target Support Files/Pods-iDeaBox/Pods-iDeaBox.release.xcconfig"; sourceTree = "<group>"; };
 		FEF5047927A94C39005A96B6 /* iDeaBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDeaBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF5047C27A94C39005A96B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEF5047E27A94C39005A96B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FEF5048027A94C39005A96B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FEF5048327A94C39005A96B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEF5048527A94C3B005A96B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEF5048827A94C3B005A96B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEF5048A27A94C3B005A96B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF504A627A96A5A005A96B6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B631BE854DB2A1795D333EA0 /* Pods_iDeaBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C77D65AD7A658C5D30138D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				285ABE22F297F929D5BE7F26 /* Pods-iDeaBox.debug.xcconfig */,
+				CC6BE01EB44A67577777611A /* Pods-iDeaBox.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F78A0880AA6B04F49D3B7870 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0B5EB2F0F099B009504A66D /* Pods_iDeaBox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FEF5047027A94C39005A96B6 = {
 			isa = PBXGroup;
 			children = (
 				FEF5047B27A94C39005A96B6 /* iDeaBox */,
 				FEF5047A27A94C39005A96B6 /* Products */,
+				3C77D65AD7A658C5D30138D1 /* Pods */,
+				F78A0880AA6B04F49D3B7870 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +80,8 @@
 		FEF5047B27A94C39005A96B6 /* iDeaBox */ = {
 			isa = PBXGroup;
 			children = (
+				FEF504A527A96A36005A96B6 /* Supporting files */,
 				FEF5047C27A94C39005A96B6 /* AppDelegate.swift */,
-				FEF5047E27A94C39005A96B6 /* SceneDelegate.swift */,
 				FEF5048027A94C39005A96B6 /* ViewController.swift */,
 				FEF5048227A94C39005A96B6 /* Main.storyboard */,
 				FEF5048527A94C3B005A96B6 /* Assets.xcassets */,
@@ -67,6 +91,14 @@
 			path = iDeaBox;
 			sourceTree = "<group>";
 		};
+		FEF504A527A96A36005A96B6 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				FEF504A627A96A5A005A96B6 /* R.generated.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEF5048D27A94C3B005A96B6 /* Build configuration list for PBXNativeTarget "iDeaBox" */;
 			buildPhases = (
+				8B62F6B01A6C327346C31F17 /* [CP] Check Pods Manifest.lock */,
+				FEF504A427A969FC005A96B6 /* ShellScript */,
 				FEF5047527A94C39005A96B6 /* Sources */,
 				FEF5047627A94C39005A96B6 /* Frameworks */,
 				FEF5047727A94C39005A96B6 /* Resources */,
+				DDBCC7552F2CF654E0FC51BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +168,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B62F6B01A6C327346C31F17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iDeaBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDBCC7552F2CF654E0FC51BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iDeaBox/Pods-iDeaBox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iDeaBox/Pods-iDeaBox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iDeaBox/Pods-iDeaBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF504A427A969FC005A96B6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FEF5047527A94C39005A96B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +236,7 @@
 			files = (
 				FEF5048127A94C39005A96B6 /* ViewController.swift in Sources */,
 				FEF5047D27A94C39005A96B6 /* AppDelegate.swift in Sources */,
-				FEF5047F27A94C39005A96B6 /* SceneDelegate.swift in Sources */,
+				FEF504A727A96A5A005A96B6 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +380,7 @@
 		};
 		FEF5048E27A94C3B005A96B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 285ABE22F297F929D5BE7F26 /* Pods-iDeaBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +409,7 @@
 		};
 		FEF5048F27A94C3B005A96B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6BE01EB44A67577777611A /* Pods-iDeaBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
