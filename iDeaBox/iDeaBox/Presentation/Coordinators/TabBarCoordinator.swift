@@ -23,8 +23,8 @@ final class TabBarCoordinator: RootViewCoordinator {
             settingsCoordinator.rootViewController
         ]
 
-        mainCoordinator.rootViewController.tabBarItem = UITabBarItem(title: "Main", image: nil, selectedImage: nil)
-        settingsCoordinator.rootViewController.tabBarItem = UITabBarItem(title: "Settings", image: nil, selectedImage: nil)
+        mainCoordinator.rootViewController.tabBarItem = TabBarItem.main.tabBarItem
+        settingsCoordinator.rootViewController.tabBarItem = TabBarItem.settings.tabBarItem
 
         tabBarController.selectedIndex = 0
         tabBarController.selectedViewController = tabBarController.viewControllers?.first
