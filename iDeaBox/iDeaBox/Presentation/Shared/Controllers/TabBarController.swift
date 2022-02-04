@@ -47,7 +47,7 @@ class TabBarController: UITabBarController {
         delegate = self
     }
 
-    func updateSelection() {
+    private func updateSelection() {
         let normalFont = UIFont.systemFont(ofSize: 20, weight: .medium)
         let selectedFont = UIFont.systemFont(ofSize: 20, weight: .bold)
         viewControllers?.forEach {

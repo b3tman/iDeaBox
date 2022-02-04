@@ -7,5 +7,6 @@ target 'iDeaBox' do
 
   # Pods for iDeaBox
   pod 'R.swift'
+  pod 'Swinject'
 
 end

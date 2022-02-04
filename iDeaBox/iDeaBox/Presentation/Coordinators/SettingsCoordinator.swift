@@ -11,7 +11,7 @@ final class SettingsCoordinator: RootViewCoordinator {
     var childCoordinators: [Coordinator] = []
 
     var rootViewController: UIViewController! = {
-        let settingsViewController = R.storyboard.settings().instantiateInitialViewController()!
+        let settingsViewController = SettingsViewController()
         let settingsNavigationController = BaseNavigationController(rootViewController: settingsViewController)
         return settingsNavigationController
     }()

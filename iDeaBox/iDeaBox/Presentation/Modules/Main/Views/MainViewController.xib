@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="iDeaBox" customModuleProvider="target">
+            <connections>
+                <outlet property="cityLabel" destination="HHp-k8-ps2" id="8cl-nH-XM4"/>
+                <outlet property="refreshButton" destination="H3Z-e8-Y6K" id="N8K-tZ-55C"/>
+                <outlet property="spinner" destination="YEL-82-Emq" id="o7T-4L-uoM"/>
+                <outlet property="temperatureLabel" destination="VXq-N6-Uga" id="t5T-kh-feg"/>
+                <outlet property="view" destination="iN0-l3-epB" id="8M3-jg-mV3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_background" translatesAutoresizingMaskIntoConstraints="NO" id="lEk-qu-HMR">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eZ3-3c-nqD">
+                    <rect key="frame" x="30" y="174" width="354" height="152"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minsk" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHp-k8-ps2">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="55"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                            <color key="textColor" systemColor="systemBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXq-N6-Uga">
+                            <rect key="frame" x="0.0" y="55" width="354" height="97"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="81"/>
+                            <color key="textColor" systemColor="systemBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3Z-e8-Y6K">
+                    <rect key="frame" x="308.5" y="64" width="85.5" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="REFRESH">
+                        <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="actionRefresh:" destination="-1" eventType="touchUpInside" id="IUU-8G-LKb"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="YEL-82-Emq">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eZ3-3c-nqD" secondAttribute="trailing" constant="30" id="1hc-xW-3u1"/>
+                <constraint firstItem="YEL-82-Emq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FU3-ng-aMt"/>
+                <constraint firstItem="lEk-qu-HMR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Iae-92-hhG"/>
+                <constraint firstItem="lEk-qu-HMR" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Qpx-EG-S7D"/>
+                <constraint firstAttribute="bottom" secondItem="lEk-qu-HMR" secondAttribute="bottom" id="TTE-DO-LRY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="H3Z-e8-Y6K" secondAttribute="trailing" constant="20" id="ZHq-19-VTH"/>
+                <constraint firstItem="eZ3-3c-nqD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="bs8-4l-GRM"/>
+                <constraint firstItem="YEL-82-Emq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fq1-FK-M8V"/>
+                <constraint firstItem="eZ3-3c-nqD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="130" id="kIa-Fg-G7g"/>
+                <constraint firstItem="H3Z-e8-Y6K" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="uHA-sX-WEy"/>
+                <constraint firstItem="lEk-qu-HMR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vyG-vm-QmL"/>
+            </constraints>
+            <point key="canvasLocation" x="242.0289855072464" y="-29.464285714285712"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_background" width="203" height="311"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
