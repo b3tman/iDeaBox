@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B631BE854DB2A1795D333EA0 /* Pods_iDeaBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B5EB2F0F099B009504A66D /* Pods_iDeaBox.framework */; };
+		FE32408827C3F76900FD6667 /* iDeaBox.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = FE32408727C3F76900FD6667 /* iDeaBox.entitlements */; };
 		FE41544627AD2A590001417C /* WeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE41544527AD2A590001417C /* WeatherUseCase.swift */; };
 		FE41544A27AD2AE50001417C /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE41544927AD2AE50001417C /* WeatherRepository.swift */; };
 		FE41544C27AD2AF50001417C /* GeolocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE41544B27AD2AF50001417C /* GeolocationRepository.swift */; };
@@ -22,7 +23,7 @@
 		FEE0C92627ADBE4C00E3361E /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0C92527ADBE4C00E3361E /* Errors.swift */; };
 		FEE0C92927ADC12300E3361E /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0C92827ADC12300E3361E /* WeatherModel.swift */; };
 		FEE0C92C27ADC1DC00E3361E /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0C92B27ADC1DC00E3361E /* WeatherAPI.swift */; };
-		FEE0C92E27ADC27D00E3361E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0C92D27ADC27D00E3361E /* Constants.swift */; };
+		FEE0C92E27ADC27D00E3361E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0C92D27ADC27D00E3361E /* Environment.swift */; };
 		FEF5047D27A94C39005A96B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5047C27A94C39005A96B6 /* AppDelegate.swift */; };
 		FEF5048127A94C39005A96B6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5048027A94C39005A96B6 /* MainViewController.swift */; };
 		FEF5048627A94C3B005A96B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF5048527A94C3B005A96B6 /* Assets.xcassets */; };
@@ -46,6 +47,9 @@
 		285ABE22F297F929D5BE7F26 /* Pods-iDeaBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDeaBox.debug.xcconfig"; path = "Target Support Files/Pods-iDeaBox/Pods-iDeaBox.debug.xcconfig"; sourceTree = "<group>"; };
 		B0B5EB2F0F099B009504A66D /* Pods_iDeaBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDeaBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6BE01EB44A67577777611A /* Pods-iDeaBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDeaBox.release.xcconfig"; path = "Target Support Files/Pods-iDeaBox/Pods-iDeaBox.release.xcconfig"; sourceTree = "<group>"; };
+		FE32406527C3EB0B00FD6667 /* SecretsDevelopment.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SecretsDevelopment.xcconfig; sourceTree = "<group>"; };
+		FE32406627C3EE8300FD6667 /* SecretsRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SecretsRelease.xcconfig; sourceTree = "<group>"; };
+		FE32408727C3F76900FD6667 /* iDeaBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iDeaBox.entitlements; sourceTree = "<group>"; };
 		FE41544527AD2A590001417C /* WeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUseCase.swift; sourceTree = "<group>"; };
 		FE41544927AD2AE50001417C /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		FE41544B27AD2AF50001417C /* GeolocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationRepository.swift; sourceTree = "<group>"; };
@@ -60,7 +64,7 @@
 		FEE0C92527ADBE4C00E3361E /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		FEE0C92827ADC12300E3361E /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		FEE0C92B27ADC1DC00E3361E /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
-		FEE0C92D27ADC27D00E3361E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FEE0C92D27ADC27D00E3361E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		FEF5047927A94C39005A96B6 /* iDeaBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDeaBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF5047C27A94C39005A96B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEF5048027A94C39005A96B6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 		FEF5047B27A94C39005A96B6 /* iDeaBox */ = {
 			isa = PBXGroup;
 			children = (
+				FE32408727C3F76900FD6667 /* iDeaBox.entitlements */,
 				FEF504A827A96BDA005A96B6 /* Application */,
 				FEF504A927A96BEE005A96B6 /* Data */,
 				FEF504AA27A96BF6005A96B6 /* Domain */,
@@ -229,7 +234,7 @@
 			children = (
 				FEF5047C27A94C39005A96B6 /* AppDelegate.swift */,
 				FE41544D27AD49B00001417C /* AppConfigurator.swift */,
-				FEE0C92D27ADC27D00E3361E /* Constants.swift */,
+				FEE0C92D27ADC27D00E3361E /* Environment.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -272,6 +277,8 @@
 				FEF5048A27A94C3B005A96B6 /* Info.plist */,
 				FEF5048527A94C3B005A96B6 /* Assets.xcassets */,
 				FEF504D127AAA401005A96B6 /* Lacalizable.strings */,
+				FE32406527C3EB0B00FD6667 /* SecretsDevelopment.xcconfig */,
+				FE32406627C3EE8300FD6667 /* SecretsRelease.xcconfig */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -463,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF5048927A94C3B005A96B6 /* LaunchScreen.storyboard in Resources */,
+				FE32408827C3F76900FD6667 /* iDeaBox.entitlements in Resources */,
 				FEF504CF27AAA401005A96B6 /* Lacalizable.strings in Resources */,
 				FE41546327AD59FD0001417C /* MainViewController.xib in Resources */,
 				FEF5048627A94C3B005A96B6 /* Assets.xcassets in Resources */,
@@ -564,7 +572,7 @@
 				FEE0C92C27ADC1DC00E3361E /* WeatherAPI.swift in Sources */,
 				FE41544627AD2A590001417C /* WeatherUseCase.swift in Sources */,
 				FE41545327AD4B410001417C /* DomainAssembly.swift in Sources */,
-				FEE0C92E27ADC27D00E3361E /* Constants.swift in Sources */,
+				FEE0C92E27ADC27D00E3361E /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,7 +716,7 @@
 		};
 		FEF5048E27A94C3B005A96B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 285ABE22F297F929D5BE7F26 /* Pods-iDeaBox.debug.xcconfig */;
+			baseConfigurationReference = FE32406527C3EB0B00FD6667 /* SecretsDevelopment.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -737,7 +745,7 @@
 		};
 		FEF5048F27A94C3B005A96B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC6BE01EB44A67577777611A /* Pods-iDeaBox.release.xcconfig */;
+			baseConfigurationReference = FE32406627C3EE8300FD6667 /* SecretsRelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

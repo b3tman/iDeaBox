@@ -14,7 +14,7 @@ enum WeatherAPI {
 }
 
 extension WeatherAPI: TargetType {
-    var baseURL: URL { return URL(string: Constants.WeatherConstants.baseURL)! }
+    var baseURL: URL { return URL(string: Environment().configuration(for: .baseURL))! }
     var path: String {
         switch self {
         case .forecastCurrent:
@@ -37,7 +37,7 @@ extension WeatherAPI: TargetType {
             let parameters = [
                 "lat": lat,
                 "lon": lon,
-                "appid": Constants.WeatherConstants.apiKey,
+                "appid": Environment().configuration(for: .apiKey),
                 "units": "metric"
             ]
             return .requestParameters(parameters: parameters,
