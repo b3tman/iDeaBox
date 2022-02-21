@@ -44,11 +44,11 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3Z-e8-Y6K">
-                    <rect key="frame" x="308.5" y="64" width="85.5" height="31"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="REFRESH">
-                        <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
-                    </buttonConfiguration>
+                    <rect key="frame" x="328" y="64" width="66" height="30"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="REFRESH">
+                        <color key="titleColor" systemColor="systemBackgroundColor"/>
+                    </state>
                     <connections>
                         <action selector="actionRefresh:" destination="-1" eventType="touchUpInside" id="IUU-8G-LKb"/>
                     </connections>

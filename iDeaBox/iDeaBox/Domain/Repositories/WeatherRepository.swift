@@ -8,6 +8,5 @@
 import Foundation
 
 protocol WeatherRepository {
-    func load()
-    func refresh()
+    func forecastCurrent(completion: @escaping WeatherCallback<WeatherModel>)
 }

@@ -8,20 +8,17 @@
 import Foundation
 
 final class WeatherUseCase {
-
     private let weatherRepository: WeatherRepository
-    private let geolocationRepository: GeolocationRepository
 
-    init(weatherRepository: WeatherRepository, geolocationRepository: GeolocationRepository) {
+    init(weatherRepository: WeatherRepository) {
         self.weatherRepository = weatherRepository
-        self.geolocationRepository = geolocationRepository
     }
 
-    func loadWeather() {
-
+    func loadWeather(completion: @escaping WeatherCallback<WeatherModel>) {
+        weatherRepository.forecastCurrent(completion: completion)
     }
 
-    func refreshWeather() {
-
+    func refreshWeather(completion: @escaping WeatherCallback<WeatherModel>) {
+        weatherRepository.forecastCurrent(completion: completion)
     }
 }

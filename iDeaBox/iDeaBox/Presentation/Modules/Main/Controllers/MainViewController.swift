@@ -21,18 +21,19 @@ final class MainViewController: BaseViewController<MainViewModel> {
         super.viewDidLoad()
 
         config()
-//        viewModel.reloadState()
+        viewModel.reloadState()
     }
 
     //MARK: - Config
 
     private func config() {
         hideSpinner()
+        setupViewModel()
     }
 
     //MARK: - Actions
     @IBAction func actionRefresh(_ sender: Any) {
-
+        viewModel.refresh()
     }
 
     //MARK: - Override
@@ -43,7 +44,17 @@ final class MainViewController: BaseViewController<MainViewModel> {
             hideSpinner()
         case .loading:
             showSpinner()
+        case .error:
+            hideSpinner()
         }
+    }
+
+    //MARK: - Private
+
+    private func setupViewModel() {
+        viewModel.temperature.sink { [weak self] temperature in
+            self?.temperatureLabel.text = String(temperature)
+        }.store(in: &cancellables)
     }
 
     private func showSpinner() {

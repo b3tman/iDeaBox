@@ -12,8 +12,7 @@ final class DomainAssembly: Assembly {
     func assemble(container: Container) {
 
         container.register(WeatherUseCase.self) { r in
-            return WeatherUseCase(weatherRepository: r.resolve(WeatherRepository.self)!,
-                                  geolocationRepository: r.resolve(GeolocationRepository.self)!)
+            return WeatherUseCase(weatherRepository: r.resolve(WeatherRepository.self)!)
         }
     }
 }

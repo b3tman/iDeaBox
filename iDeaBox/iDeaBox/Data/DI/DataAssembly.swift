@@ -7,11 +7,18 @@
 
 import Foundation
 import Swinject
+import Moya
 
 final class DataAssembly: Assembly {
     func assemble(container: Container) {
+        container.register(MoyaProvider<WeatherAPI>.self) { _ in
+            return MoyaProvider<WeatherAPI>()
+        }
+        .inObjectScope(.container)
+
         container.register(WeatherRepository.self) { r in
-            return WeatherRepositoryImpl()
+            return WeatherRepositoryImpl(api: r.resolve(MoyaProvider<WeatherAPI>.self)!,
+                                         geolocationRepository: r.resolve(GeolocationRepository.self)!)
         }
         .inObjectScope(.container)
 

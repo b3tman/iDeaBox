@@ -11,6 +11,7 @@ import Combine
 enum ViewState {
     case content
     case loading
+    case error
 }
 
 class BaseViewController<T: BaseViewModel>: UIViewController {
@@ -30,6 +31,8 @@ class BaseViewController<T: BaseViewModel>: UIViewController {
             setContentState()
         case .loading:
             setLoadingState()
+        case .error:
+            setErrorState()
         }
     }
 
@@ -46,6 +49,10 @@ class BaseViewController<T: BaseViewModel>: UIViewController {
     }
 
     private func setLoadingState() {
+
+    }
+
+    private func setErrorState() {
 
     }
 }
