@@ -4,3 +4,5 @@ Pods
 Podfile.lock
 iDeaBox/Supporting files/R.generated.swift
 Carthage
+iDeaBox/Resources/SecretsDevelopment.xcconfig
+iDeaBox/Resources/SecretsRelease.xcconfig
