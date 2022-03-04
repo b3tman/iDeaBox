@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B631BE854DB2A1795D333EA0 /* Pods_iDeaBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B5EB2F0F099B009504A66D /* Pods_iDeaBox.framework */; };
 		FE32408827C3F76900FD6667 /* iDeaBox.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = FE32408727C3F76900FD6667 /* iDeaBox.entitlements */; };
+		FE32408B27C3FC1D00FD6667 /* SecretsRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE32408927C3FC1D00FD6667 /* SecretsRelease.xcconfig */; };
+		FE32408C27C3FC1D00FD6667 /* SecretsDevelopment.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE32408A27C3FC1D00FD6667 /* SecretsDevelopment.xcconfig */; };
 		FE41544627AD2A590001417C /* WeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE41544527AD2A590001417C /* WeatherUseCase.swift */; };
 		FE41544A27AD2AE50001417C /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE41544927AD2AE50001417C /* WeatherRepository.swift */; };
 		FE41544C27AD2AF50001417C /* GeolocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE41544B27AD2AF50001417C /* GeolocationRepository.swift */; };
@@ -47,9 +49,9 @@
 		285ABE22F297F929D5BE7F26 /* Pods-iDeaBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDeaBox.debug.xcconfig"; path = "Target Support Files/Pods-iDeaBox/Pods-iDeaBox.debug.xcconfig"; sourceTree = "<group>"; };
 		B0B5EB2F0F099B009504A66D /* Pods_iDeaBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDeaBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6BE01EB44A67577777611A /* Pods-iDeaBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDeaBox.release.xcconfig"; path = "Target Support Files/Pods-iDeaBox/Pods-iDeaBox.release.xcconfig"; sourceTree = "<group>"; };
-		FE32406527C3EB0B00FD6667 /* SecretsDevelopment.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SecretsDevelopment.xcconfig; sourceTree = "<group>"; };
-		FE32406627C3EE8300FD6667 /* SecretsRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SecretsRelease.xcconfig; sourceTree = "<group>"; };
 		FE32408727C3F76900FD6667 /* iDeaBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iDeaBox.entitlements; sourceTree = "<group>"; };
+		FE32408927C3FC1D00FD6667 /* SecretsRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SecretsRelease.xcconfig; sourceTree = "<group>"; };
+		FE32408A27C3FC1D00FD6667 /* SecretsDevelopment.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SecretsDevelopment.xcconfig; sourceTree = "<group>"; };
 		FE41544527AD2A590001417C /* WeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUseCase.swift; sourceTree = "<group>"; };
 		FE41544927AD2AE50001417C /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		FE41544B27AD2AF50001417C /* GeolocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationRepository.swift; sourceTree = "<group>"; };
@@ -274,11 +276,11 @@
 		FEF504AC27A96C09005A96B6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FE32408A27C3FC1D00FD6667 /* SecretsDevelopment.xcconfig */,
+				FE32408927C3FC1D00FD6667 /* SecretsRelease.xcconfig */,
 				FEF5048A27A94C3B005A96B6 /* Info.plist */,
 				FEF5048527A94C3B005A96B6 /* Assets.xcassets */,
 				FEF504D127AAA401005A96B6 /* Lacalizable.strings */,
-				FE32406527C3EB0B00FD6667 /* SecretsDevelopment.xcconfig */,
-				FE32406627C3EE8300FD6667 /* SecretsRelease.xcconfig */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -470,10 +472,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF5048927A94C3B005A96B6 /* LaunchScreen.storyboard in Resources */,
+				FE32408B27C3FC1D00FD6667 /* SecretsRelease.xcconfig in Resources */,
 				FE32408827C3F76900FD6667 /* iDeaBox.entitlements in Resources */,
 				FEF504CF27AAA401005A96B6 /* Lacalizable.strings in Resources */,
 				FE41546327AD59FD0001417C /* MainViewController.xib in Resources */,
 				FEF5048627A94C3B005A96B6 /* Assets.xcassets in Resources */,
+				FE32408C27C3FC1D00FD6667 /* SecretsDevelopment.xcconfig in Resources */,
 				FE41545F27AD58FE0001417C /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -716,7 +720,7 @@
 		};
 		FEF5048E27A94C3B005A96B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE32406527C3EB0B00FD6667 /* SecretsDevelopment.xcconfig */;
+			baseConfigurationReference = FE32408A27C3FC1D00FD6667 /* SecretsDevelopment.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -745,7 +749,7 @@
 		};
 		FEF5048F27A94C3B005A96B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE32406627C3EE8300FD6667 /* SecretsRelease.xcconfig */;
+			baseConfigurationReference = FE32408927C3FC1D00FD6667 /* SecretsRelease.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
