@@ -26,5 +26,10 @@ final class DataAssembly: Assembly {
             return GeolocationRepositoryImpl()
         }
         .inObjectScope(.container)
+
+        container.register(SharedStorageRepository.self) { r in
+            return SharedStorageRepository(modelName: Constants.Keys.modelName)
+        }
+        .inObjectScope(.container)
     }
 }

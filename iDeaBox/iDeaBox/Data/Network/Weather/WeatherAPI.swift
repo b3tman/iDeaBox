@@ -14,7 +14,7 @@ enum WeatherAPI {
 }
 
 extension WeatherAPI: TargetType {
-    var baseURL: URL { return URL(string: Environment().configuration(for: .baseURL))! }
+    var baseURL: URL { return URL(string: "https://api.openweathermap.org")! }
     var path: String {
         switch self {
         case .forecastCurrent:

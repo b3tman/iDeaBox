@@ -8,6 +8,9 @@
 import Foundation
 import Moya
 
+typealias ResultCallback<T, E: Error> = (Result<T, E>) -> Void
+typealias ResultCompletion<T> = ResultCallback<T, Error>
+typealias VoidResultCompletion = ResultCallback<Void, Error>
 typealias WeatherCallback<T> = (_ result: Result<T, WeatherNetworkError>) -> Void
 
 final class WeatherRepositoryImpl: WeatherRepository {
@@ -41,8 +44,6 @@ final class WeatherRepositoryImpl: WeatherRepository {
                 guard let forecastDayModel = try? response.map(WeatherModel.self) else {
                     return completion(.failure(.mappingError))
                 }
-
-                #warning("TODO: Add save to DB")
                 completion(.success(forecastDayModel))
             case .failure(let error):
                 let networkError = self.mapMoyaError(error)
