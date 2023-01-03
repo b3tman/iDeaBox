@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,7 +27,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eZ3-3c-nqD">
-                    <rect key="frame" x="30" y="174" width="354" height="152"/>
+                    <rect key="frame" x="30" y="178" width="354" height="152"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minsk" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHp-k8-ps2">
                             <rect key="frame" x="0.0" y="0.0" width="354" height="55"/>
@@ -44,7 +44,7 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3Z-e8-Y6K">
-                    <rect key="frame" x="328" y="64" width="66" height="30"/>
+                    <rect key="frame" x="328" y="68" width="66" height="30"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="REFRESH">
                         <color key="titleColor" systemColor="systemBackgroundColor"/>
@@ -72,7 +72,7 @@
                 <constraint firstItem="H3Z-e8-Y6K" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="uHA-sX-WEy"/>
                 <constraint firstItem="lEk-qu-HMR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vyG-vm-QmL"/>
             </constraints>
-            <point key="canvasLocation" x="242.0289855072464" y="-29.464285714285712"/>
+            <point key="canvasLocation" x="157" y="-2"/>
         </view>
     </objects>
     <resources>

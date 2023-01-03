@@ -22,6 +22,7 @@ class BaseViewController<T: BaseViewModel>: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.backgroundColor = .systemBackground
         subscribeViewState()
     }
 

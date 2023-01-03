@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B631BE854DB2A1795D333EA0 /* Pods_iDeaBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B5EB2F0F099B009504A66D /* Pods_iDeaBox.framework */; };
+		FE1CBCB9296400F3003AD14E /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1CBCB8296400F3003AD14E /* GameCoordinator.swift */; };
+		FE1CBCBD2964014B003AD14E /* GameAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1CBCBC2964014B003AD14E /* GameAssembly.swift */; };
+		FE1CBCC029640185003AD14E /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1CBCBF29640185003AD14E /* GameViewModel.swift */; };
+		FE1CBCC3296401E5003AD14E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1CBCC2296401E5003AD14E /* GameViewController.swift */; };
 		FE32408827C3F76900FD6667 /* iDeaBox.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = FE32408727C3F76900FD6667 /* iDeaBox.entitlements */; };
 		FE32408B27C3FC1D00FD6667 /* SecretsRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE32408927C3FC1D00FD6667 /* SecretsRelease.xcconfig */; };
 		FE32408C27C3FC1D00FD6667 /* SecretsDevelopment.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FE32408A27C3FC1D00FD6667 /* SecretsDevelopment.xcconfig */; };
@@ -53,6 +57,10 @@
 		285ABE22F297F929D5BE7F26 /* Pods-iDeaBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDeaBox.debug.xcconfig"; path = "Target Support Files/Pods-iDeaBox/Pods-iDeaBox.debug.xcconfig"; sourceTree = "<group>"; };
 		B0B5EB2F0F099B009504A66D /* Pods_iDeaBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDeaBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6BE01EB44A67577777611A /* Pods-iDeaBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDeaBox.release.xcconfig"; path = "Target Support Files/Pods-iDeaBox/Pods-iDeaBox.release.xcconfig"; sourceTree = "<group>"; };
+		FE1CBCB8296400F3003AD14E /* GameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoordinator.swift; sourceTree = "<group>"; };
+		FE1CBCBC2964014B003AD14E /* GameAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAssembly.swift; sourceTree = "<group>"; };
+		FE1CBCBF29640185003AD14E /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		FE1CBCC2296401E5003AD14E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		FE32408727C3F76900FD6667 /* iDeaBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iDeaBox.entitlements; sourceTree = "<group>"; };
 		FE32408927C3FC1D00FD6667 /* SecretsRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SecretsRelease.xcconfig; sourceTree = "<group>"; };
 		FE32408A27C3FC1D00FD6667 /* SecretsDevelopment.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SecretsDevelopment.xcconfig; sourceTree = "<group>"; };
@@ -123,6 +131,48 @@
 				B0B5EB2F0F099B009504A66D /* Pods_iDeaBox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE1CBCBA2964011A003AD14E /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				FE1CBCBB29640138003AD14E /* DI */,
+				FE1CBCBE29640169003AD14E /* ViewModel */,
+				FE1CBCC429640405003AD14E /* Views */,
+				FE1CBCC1296401B7003AD14E /* GameViewController */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		FE1CBCBB29640138003AD14E /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				FE1CBCBC2964014B003AD14E /* GameAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		FE1CBCBE29640169003AD14E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FE1CBCBF29640185003AD14E /* GameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FE1CBCC1296401B7003AD14E /* GameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE1CBCC2296401E5003AD14E /* GameViewController.swift */,
+			);
+			path = GameViewController;
+			sourceTree = "<group>";
+		};
+		FE1CBCC429640405003AD14E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FE41544427AD2A320001417C /* UseCase */ = {
@@ -313,6 +363,7 @@
 				FEF504B727A98ED6005A96B6 /* TabBarCoordinator.swift */,
 				FEF504C227A990B7005A96B6 /* MainCoordinator.swift */,
 				FEF504C427A990DF005A96B6 /* SettingsCoordinator.swift */,
+				FE1CBCB8296400F3003AD14E /* GameCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -323,6 +374,7 @@
 				FEF504D227AAAE06005A96B6 /* Base */,
 				FEF504B027A96C8F005A96B6 /* Launch */,
 				FEF504AF27A96C54005A96B6 /* Main */,
+				FE1CBCBA2964011A003AD14E /* Game */,
 				FEF504C127A99059005A96B6 /* Settings */,
 			);
 			path = Modules;
@@ -570,6 +622,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE1CBCC3296401E5003AD14E /* GameViewController.swift in Sources */,
 				FEE0C92927ADC12300E3361E /* WeatherModel.swift in Sources */,
 				FEF504D827AAAE91005A96B6 /* BaseViewController.swift in Sources */,
 				FEF504B427A98CA3005A96B6 /* Coordinator.swift in Sources */,
@@ -584,14 +637,17 @@
 				FEF504B627A98D38005A96B6 /* AppCoordinator.swift in Sources */,
 				FE41545727AD503B0001417C /* WeatherRepositoryImpl.swift in Sources */,
 				FEF504BC27A98F68005A96B6 /* TabBarController.swift in Sources */,
+				FE1CBCB9296400F3003AD14E /* GameCoordinator.swift in Sources */,
 				FEF504D527AAAE23005A96B6 /* BaseViewModel.swift in Sources */,
 				FEF504DE27AAB0C7005A96B6 /* MainViewModel.swift in Sources */,
+				FE1CBCBD2964014B003AD14E /* GameAssembly.swift in Sources */,
 				FEC7FAE227D64452000DA424 /* SharedStorageRepository.swift in Sources */,
 				FEC7FAE527D64B3E000DA424 /* iDeaBox.xcdatamodeld in Sources */,
 				FEF504C527A990DF005A96B6 /* SettingsCoordinator.swift in Sources */,
 				FEF5047D27A94C39005A96B6 /* AppDelegate.swift in Sources */,
 				FEF504C727A99484005A96B6 /* BaseNavigationController.swift in Sources */,
 				FE41545B27AD508E0001417C /* DataAssembly.swift in Sources */,
+				FE1CBCC029640185003AD14E /* GameViewModel.swift in Sources */,
 				FEF504B227A96D20005A96B6 /* R.generated.swift in Sources */,
 				FE41545027AD4ACA0001417C /* MainAssembly.swift in Sources */,
 				FEF504C327A990B7005A96B6 /* MainCoordinator.swift in Sources */,

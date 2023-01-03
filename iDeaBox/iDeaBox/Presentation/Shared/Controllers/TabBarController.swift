@@ -9,6 +9,7 @@ import UIKit
 
 enum TabBarItem: Int {
     case main
+    case game
     case settings
 
     var tabBarItem: UITabBarItem {
@@ -19,6 +20,8 @@ enum TabBarItem: Int {
         switch self {
         case .main:
             return R.string.lacalizable.tabItemMain()
+        case .game:
+            return R.string.lacalizable.tabItemGame()
         case .settings:
             return R.string.lacalizable.tabItemSettings()
         }

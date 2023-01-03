@@ -14,16 +14,19 @@ final class TabBarCoordinator: RootViewCoordinator {
         let tabBarController = TabBarController()
 
         let mainCoordinator = MainCoordinator()
+        let gameCoordinator = GameCoordinator()
         let settingsCoordinator = SettingsCoordinator()
 
-        addChildCoordinators([mainCoordinator, settingsCoordinator])
+        addChildCoordinators([mainCoordinator, gameCoordinator, settingsCoordinator])
 
         tabBarController.viewControllers = [
             mainCoordinator.rootViewController,
+            gameCoordinator.rootViewController,
             settingsCoordinator.rootViewController
         ]
 
         mainCoordinator.rootViewController.tabBarItem = TabBarItem.main.tabBarItem
+        gameCoordinator.rootViewController.tabBarItem = TabBarItem.game.tabBarItem
         settingsCoordinator.rootViewController.tabBarItem = TabBarItem.settings.tabBarItem
 
         tabBarController.selectedIndex = 0
