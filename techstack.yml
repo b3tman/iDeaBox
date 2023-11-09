@@ -1,0 +1,79 @@
+repo_name: b3tman/iDeaBox
+report_id: 8058972bf68395badf61fac291832567
+repo_type: Public
+timestamp: '2023-11-09T11:41:54+00:00'
+requested_by: b3tman
+provider: github
+branch: main
+detected_tools_count: 7
+tools:
+- name: Ruby
+  description: A dynamic, interpreted, open source programming language with a focus
+    on simplicity and productivity
+  website_url: https://www.ruby-lang.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source: Repo Metadata
+- name: Swift
+  description: 'An innovative new programming language for Cocoa and Cocoa Touch. '
+  website_url: https://developer.apple.com/swift/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1009/tuHsaI2U.png
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: CocoaPods
+  description: A dependency manager for Swift and Objective-C Cocoa projects
+  website_url: https://cocoapods.org/
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: CocoaPods Packages
+  image_url: https://img.stackshare.io/service/2426/e1cbdef9d4b11484049a033886578e54_400x400.png
+  detection_source: iDeaBox/Podfile
+  last_updated_by: b3tman
+  last_updated_on: 2022-02-01 13:22:19.000000000 Z
+- name: Moya
+  description: "How people build software. \n\nNeed help? Send us a message at https://t.co/YU5nzbpDIg
+    for support."
+  website_url: https://moya.github.io
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/8778/pBeeJQDQ_normal.png
+  detection_source: iDeaBox/Podfile
+  last_updated_by: b3tman
+  last_updated_on: 2022-02-21 15:40:36.000000000 Z
+- name: R.swift
+  website_url: https://github.com/mac-cain13/R.swift
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/11088/618233.jpeg
+  detection_source: iDeaBox/Podfile
+  last_updated_by: b3tman
+  last_updated_on: 2022-02-01 13:22:19.000000000 Z
+- name: Swinject
+  description: Dependency injection framework for Swift
+  package_url: https://cocoapods.org/pods/Swinject
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: CocoaPods Packages
+  image_url: https://img.stackshare.io/package/cocoapods/image.png
+  detection_source: iDeaBox/Podfile
+  last_updated_by: b3tman
+  last_updated_on: 2022-02-04 13:07:40.000000000 Z
